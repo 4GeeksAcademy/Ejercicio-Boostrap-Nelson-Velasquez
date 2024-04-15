@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Instagram</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a>
+            <form class="d-flex">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-success m-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Create a new post
+                </button>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-secondary dropdown-toggle m-3" data-bs-toggle="dropdown"
+                        data-bs-display="static" aria-expanded="false"> <i class="fa-solid fa-gear"></i>
+
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-m-start"
+                        style="margin-top: -5px; margin-right: 10px;">
+                        <li><button class="dropdown-item" type="button">Profile</button></li>
+                        <li><button class="dropdown-item" type="button">Accesibilty</button></li>
+                        <li><button class="dropdown-item" type="button">Privacy and data</button></li>
+                        <li><button class="dropdown-item" type="button"style="border-top: 1px solid black;"" >Log out</button></li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+    </nav>
+    <!--Pestañ<as-->
+    <div class="container">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="mostrarInformacion('tabla')"><i
+                        class="fa-solid fa-table-cells"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="mostrarInformacion('cards')"><i
+                        class="fa-solid fa-square"></i></a>
+            </li>
+        </ul>
+    </div>
+    <!-- INICIO de Cuadricula de 9 Primera pestaña tabla-->
+    <div id="tabla" class="container">
+        <div class="row">
+            <div class="col">
+                <img src="https://picsum.photos/450/300?random=1" class="img-fluid mb-3" alt="Imagen 1">
+            </div>
+            <div class="col">
+                <img src="https://picsum.photos/450/300?random=2" class="img-fluid mb-3" alt="Imagen 2">
+            </div>
+            <div class="col">
+                <img src="https://picsum.photos/450/300?random=3" class="img-fluid mb-3" alt="Imagen 3">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="https://picsum.photos/450/300?random=4" class="img-fluid mb-3" alt="Imagen 4">
+            </div>
+            <div class="col">
+                <img src="https://picsum.photos/450/300?random=5" class="img-fluid mb-3" alt="Imagen 5">
+            </div>
+            <div class="col">
+                <img src="https://picsum.photos/450/300?random=6" class="img-fluid mb-3" alt="Imagen 6">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="https://picsum.photos/450/300?random=7" class="img-fluid mb-3" alt="imagen 7">
+            </div>
+            <div class="col">
+                <img src="https://picsum.photos/450/300?random=8" class="img-fluid mb-3" alt="Imagen 8">
+            </div>
+            <div class="col">
+                <img src="https://picsum.photos/450/300?random=9" class="img-fluid mb-3" alt="Imagen 9">
+            </div>
+        </div>
+    </div>
+    <!-- FIN de Cuadricula de 9 Segun pestaña tabla -->
+    </div>
+    <!-- INICIO 9 filas en vertical-->
+    <div id="cards" class="container" style-border="none" style="display: inline-block;">
+        <div class="row justify-content-center">
+            <div class="col-sm-6">
+                <div class="card mb-3" style="width: 30rem;">
+                    <h5 class="card-title d-flex justify-content-between align-items-center">
+                        Random image 1
+                        <span>01/09</span>
+                    </h5>
+                    <img src="https://picsum.photos/450/300?random=1" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"><strong>200 likes</strong></p>
+                        <p class="card-text">All these random images are awesome, they're never the same.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-6">
+                <div class="card mb-3" style="width: 30rem;">
+                    <h5 class="card-title d-flex justify-content-between align-items-center">
+                        Random image 2
+                        <span>02/09</span>
+                    </h5>
+                    <img src="https://picsum.photos/450/300?random=9" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"><strong>200 likes</strong></p>
+                        <p class="card-text">All these random images are awesome, they're never the same.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-6">
+                <div class="card mb-3" style="width: 30rem;">
+                    <h5 class="card-title d-flex justify-content-between align-items-center">
+                        Random image 3
+                        <span>03/09</span>
+                    </h5>
+                    <img src="https://picsum.photos/450/300?random=3" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"><strong>200 likes</strong></p>
+                        <p class="card-text">All these random images are awesome, they're never the same.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-6">
+                <div class="card mb-3" style="width: 30rem;">
+                    <h5 class="card-title d-flex justify-content-between align-items-center">
+                        Random image 4
+                        <span>04/09</span>
+                    </h5>
+                    <img src="https://picsum.photos/450/300?random=4" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"><strong>200 likes</strong></p>
+                        <p class="card-text">All these random images are awesome, they're never the same.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-6">
+                <div class="card mb-3" style="width: 30rem;">
+                    <h5 class="card-title d-flex justify-content-between align-items-center">
+                        Random image 5
+                        <span>05/09</span>
+                    </h5>
+                    <img src="https://picsum.photos/450/300?random=5" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"><strong>200 likes</strong></p>
+                        <p class="card-text">All these random images are awesome, they're never the same.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-6">
+                <div class="card mb-3" style="width: 30rem;">
+                    <h5 class="card-title d-flex justify-content-between align-items-center">
+                        Random image 6
+                        <span>06/09</span>
+                    </h5>
+                    <img src="https://picsum.photos/450/300?random=6" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"><strong>200 likes</strong></p>
+                        <p class="card-text">All these random images are awesome, they're never the same.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-6">
+                <div class="card mb-3" style="width: 30rem;">
+                    <h5 class="card-title d-flex justify-content-between align-items-center">
+                        Random image 7
+                        <span>07/09</span>
+                    </h5>
+                    <img src="https://picsum.photos/450/300?random=7" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"><strong>200 likes</strong></p>
+                        <p class="card-text">All these random images are awesome, they're never the same.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-6">
+                <div class="card mb-3" style="width: 30rem;">
+                    <h5 class="card-title d-flex justify-content-between align-items-center">
+                        Random image 8
+                        <span>08/09</span>
+                    </h5>
+                    <img src="https://picsum.photos/450/300?random=8" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"><strong>200 likes</strong></p>
+                        <p class="card-text">All these random images are awesome, they're never the same.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-6">
+                <div class="card mb-3" style="width: 30rem;">
+                    <h5 class="card-title d-flex justify-content-between align-items-center">
+                        Random image 9
+                        <span>09/09</span>
+                    </h5>
+                    <img src="https://picsum.photos/450/300?random=9" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text"><strong>200 likes</strong></p>
+                        <p class="card-text">All these random images are awesome, they're never the same.</p>
+                    </div>
+                </div>
+            </div>
+            <!--FINAL 9 filas en vertical-->
+        </div>
+        <script>
+            function mostrarInformacion(tipo) {
+                document.getElementById('tabla').style.display = tipo === 'tabla' ? 'block' : 'none';
+                document.getElementById('cards').style.display = tipo === 'cards' ? 'block' : 'none';
+            }
+        </script>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> <i
+                                class="fa-solid fa-xmark"></i> </button>
+                    </div>
+                    <div class="modal-body">
+                        <h4>Caption:</h4>
+                        <input type="text" class="form-control mb-3" placeholder="Add the caption of your post here">
+                        <div class="d-grid gap-2 d-md-block">
+                            <button class="btn btn-light mb-3s" type="button" style="border-right: 10px;"><i class="fa-solid fa-camera"></i></button>
+                            <button class="btn btn-light mb-3" type="button"><i class="fa-solid fa-location-dot"></i></button>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Publish</button>
+                    </div>
+                </div>
+            </div>
+            <!--JavaScript -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>
